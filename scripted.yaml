@@ -1,0 +1,32 @@
+pipeline {
+  agent {
+    label 'Slave'
+    }
+  stages{
+
+    stage("Uptime OP"){
+      steps {
+        sh "uptime"
+      }
+    }
+
+    stage("PWD OP"){
+      steps {
+        sh "pwd"
+      }
+    }
+
+    stage("HostName OP"){
+      steps {
+        sh "hostname"
+      }
+    }
+
+    stage("User OP"){
+      steps {
+        sh "whoami"
+      }
+    }
+
+  }
+}
