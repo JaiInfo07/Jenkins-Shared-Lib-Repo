@@ -1,2 +1,3 @@
-def hello();
+def hello() {
     sh "echo Hey Jai!"
+}
